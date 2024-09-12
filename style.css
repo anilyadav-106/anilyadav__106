@@ -15,7 +15,7 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #333;
+    background-color: #036f6f;
     color: #fff;
     padding: 10px 0;
 }
@@ -44,20 +44,47 @@ nav ul li a:hover {
 
 /* Hero Section */
 #hero {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
+    padding: auto;
+    margin: auto;
+    background-color: #000000;
+    color: #fff;
+    width: 100%;
+    text-align: right;
+    display: flex;
+    gap: 2rem;
+}
+.into{
+    height: auto;
+    width: 400px;
+    display: inline-flexbox;
+}
+.into p{
+    padding-left: 28px;
+    text-align: left;
+    gap: 4rem;
 }
 
-#hero h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
+.photo{
+    height: auto;
+    width: -60px;
+    justify-items:left;
+    display: inline-flex;
+    align-items: right;
+    padding-left: 80px;
+    padding-right: 50px;
+    
+}
+.photo img{
+    width: 200px;
+    height: 200px;
+    border-radius: 750px;
+    filter: saturate(1.1) brightness(1);
+    align-items: flex-end; 
+    border: 5px solid rgb(57, 5, 31); 
+    background-color: lightblue;
+    box-shadow: 10px solid rgb(255, 31, 31);
 }
 
-#hero p {
-    font-size: 1.5rem;
-}
 
 /* Section Styles */
 section {
@@ -72,6 +99,14 @@ section {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+#about{
+    display: flex;
+}
+.about p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-style: bold;
 }
 
 #skills ul {
@@ -92,7 +127,7 @@ section {
     align-items: center;
 }
 
-.project img {
+.project img:{
     max-width: 100%;
     height: auto;
     border-radius: 8px;
