@@ -137,11 +137,64 @@ section{
     margin-bottom: 20px;
 
 }
+/*----------------------*/
 #Projects{
     background-color: #fff;
     width: 100%;
     height: auto;
+    padding: 50px 20px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
 }
+#Projects h2{
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 50px;
+}
+.project-container{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.project-card{
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px;
+    max-width: 300px;
+    padding: 20px;
+    text-align: left;
+}
+.project-image{
+    width: 100%;
+    background-size: cover;
+    border-radius: 8px;
+    height: auto;
+}
+.project-card h3{
+    font-size: 25px;
+    color: #333;
+    margin-top: 15px;
+}
+.project-card p{
+    font-size:16px;
+    color:#555;
+}
+.project-card a{
+    display: block;
+    margin-top:10px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.project-card a:hover{
+    text-decoration: underline;
+}
+
+/* --------------------------*/
+
+
 
 #Contacts{
     background-color: #3F6275;
@@ -308,7 +361,8 @@ section{
     padding: 10px;
 }
 
-#skills {
+/*----------------------------------*/
+#Skills {
     display: flex;
     flex-direction:column;
     height: auto;
@@ -318,7 +372,7 @@ section{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#skills h2 {
+#Skills h2 {
     text-align: center;
     color: #333;
     display: flex;
@@ -380,4 +434,30 @@ footer {
     position: fixed;
     color: white;
     text-decoration: none;
+}
+@media (max-width: 768px) {
+    header li {
+        display: block;
+        margin-right: 0;
+        padding: 10px 0;
+    }
+
+    .service-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 90%;
+    }
+
+    .section {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .service-box {
+        padding: 15px;
+    }
 }
