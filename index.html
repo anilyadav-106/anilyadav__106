@@ -1,71 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta name="viewport" content="width-device-width", initial-scale="1.0">
         <meta charset="UTF-8">
-        <title>MY WEBPAGE</title>
+        <meta name="viewport" content="width-device-width", initial-scale="1.0">
+        <title>My Web</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     </head>
     <body>
         <header>
             <nav>
+                <div class="logo"><h1>AKtech</h1></div>
+
+            <div class="navi">
                 <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#Home">Home</a> </li>
+                    <li><a href="#About">About Us</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Contact">Contact</a></li>
                 </ul>
+            </div>
             </nav>
         </header>
-        <section id="hero">
-            <div class="into">
-                <h1>Hello , I am Anil Kumar Yadav</h1><br>
-                <p>Software Engineer</p>
+
+        <section id="Home" class="hero">
+            <div class="hero-content">
+                <h1>Hi, I am <span>Anil Kumar Yadav</span>.<br>This is my own website.</h1>
+                <div class="cta-buttons">
+                    <button>Hire me</button>
+                    <button>Download CV</button>
+                </div>
             </div>
-            <div class="photo">
-                <img src="pp.jpeg">
+            <div class="hero-image">
+                <img src="a.jpg" alt="Clyde image">
             </div>
         </section>
 
-        <section id="about">
-            <div class="about">
-                <h2>About Us</h2><br>
-                <p><strong>Meet Our Visionary Leader: Mr. Anil Kumar Yadav, CEO & Managing Director</strong> <br>
-                    We are proud to introduce Mr. Anil Kumar Yadav, our dynamic CEO and Managing Director, who has been the driving pressure behind our business enterprise’s fulfillment. With a robust foundation as a Software Engineer, Mr. Yadav brings a unique mixture of technical understanding and visionary management to the table.
-                    Mr. Yadav’s journey within the international of software program engineering is marked with the aid of a continuing pursuit of innovation and excellence. Over the years, he has played a pivotal position in designing and turning in cutting-edge generation solutions which have converted industries. His deep knowledge of each the technical and commercial enterprise aspects of software program development enables him to lead with clarity, foresight, and a passion for non-stop development.
-                    As the CEO and MD, Mr. Yadav has fostered a way of life of collaboration, innovation, and increase in the corporation. Under his leadership, the enterprise has not only improved its portfolio of solutions but has additionally set new benchmarks in handing over price to customers globally.
-                    Beyond his technical prowess, Mr. Yadav is a visionary leader who believes in empowering groups, nurturing talent, and riding the enterprise in the direction of a future defined through technological development and sustainable growth.
-                </p>
+        <section id="About" class="about">
+            <div class="about-image">
+                <img src="a.jpg" alt="Anil">
+            </div>
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>"Hi, I'm <strong>Anil Kumar Yadav</strong>, a passionate Software Engineer with a love for turning complex problems into
+                    elegant solutions. I thrive on designing efficient algorithms, writing clean code, and continuously 
+                    exploring new technologies to push the boundaries of innovation. 
+                    Whether it's building scalable applications or diving deep into system architecture, I enjoy the creative process of developing software that makes a difference!" </p>
             </div>
         </section>
 
         <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML/CSS</li>
+            <h2>My Skills</h2>
+            <ul class="sk">
+                <li>HTML & CSS</li>
                 <li>JavaScript</li>
                 <li>Python</li>
-                <!-- Add more skills -->
+                <li>React.js</li>
+                <li>Node.js</li>
             </ul>
         </section>
-
+        
         <section id="Projects">
-            <h2>Projects</h2>
-            <div class="project">
-                <img src="images/project1.jpg" alt="Project 1">
-                <p>Project 1 description</p>
+            <h2>My Projects</h2>
+        <div class="projects-container">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <img src="project1-thumbnail.jpg" alt="Project 1 Screenshot" class="project-image">
+                <h3>Project 1</h3>
+                <p>A brief description of the project goes here.</p>
+                <a href="https://github.com/username/project1" target="_blank">View on GitHub</a>
+                <a href="https://example.com/project1" target="_blank">Live Demo</a>
             </div>
         </section>
+        <section id="Contacts">
+            <div class="head"><h1>Contact Us</h1></div>
 
-        <section id="Contact">
-            <h2>Contact</h2>
-            <p>Email: anil2785@xavier.edu.np</p>
-            <p>Phone: 9806852379</p>
+            <div class="contact">
+                <div class="two">
+                    <div class="iconn">
+                        <div class="ico"><a><i class="fa fa-phone"></i> </a></div>
+                        <div class="pa"><p>:+9779806852379</p></div>
+                    </div> <br>
+                    <div class="iconn">    
+                        <div class="ico"><a><i class="fa fa-envelope"></i></a></div>
+                        <div class="p"><p>: anilyadav013345@gmail.com</p></div>
+                    </div>
+                </div>
+                
+
+                <div class="box">
+                    <div class="h"><h2>Suggestion Box</h2>
+                    </div>
+                    <form class="suggestion-form">
+                        <label for="name">Your Name (optional):</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name">
+                        <br>
+                        <label for="suggestion">Your Suggestion:</label>
+                        <textarea id="suggestion" name="suggestion" rows="5" placeholder="Write your suggestion here..."></textarea>
+                        
+                        <button type="submit">Submit Suggestion</button>
+                    </form>
+                </div>
+
+                <div class="icon2">
+                    <a href="https://www.facebook.com/anilyadav1065?mibextid=ZbWKwL" target="_blank">
+                        <i class="fa-brands fa-facebook" style="color: rgb(41, 146, 232);"></i></a>
+                    <a href="https://www.instagram.com/anilyadav__106?igsh=MXcxemM1YnV6Z3J4NA==" target="_blank">
+                        <i class="fa-brands fa-instagram" style="color: rgb(199, 24, 82);"></i></a>
+                    <a href="https://wa.me/+977 9806852379" target="_blank">
+                        <i class="fa-brands fa-whatsapp" style="color:  #28a745;"></i></a>
+                    <a href="https://www.tiktok.com/@anilyadav__106?_t=8pyslVEIzSc&_r=1" target="_blank"> 
+                        <i class="fa-brands fa-tiktok" style="color: black;"></i></a>
+                    <a  href="https://www.youtube.com/@anilyadav__106" target="_blank">
+                        <i class="fa-brands fa-youtube" style="color: red;"></i></a>
+                    <a><i class="fa-brands fa-linkedin" style="color: rgb(41, 146, 232);"></i></a>
+                </div>
+
+            </div>
+                
         </section>
-        
+
     </body>
+
     <footer>
-        © 2024 My Awesome Website
+        <div class="footer-bottom">
+            <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+        </div>
     </footer>
-    
 </html>
